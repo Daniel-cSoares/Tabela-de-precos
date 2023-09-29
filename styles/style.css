@@ -38,21 +38,77 @@ header p{
     text-align: center;
 }
 .card-standard{
+    position: relative;
     width: 355px;
     height: 470px;
-    /*background: red;*/
-    border-radius: 8px;
+    background: var(--white);
+    border-radius: 8px; 
     box-shadow: 0px 1px 2px 0px var(--color-shadow);
+    overflow: hidden;
+}
+.titulo{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-price);
+    margin: 30px 30px 0px 30px;
 }
 .card-standard h1{
-
+    margin: 0;
+    font-size: 18px;
+}
+.preco{
+    margin: 20px 29px 0px;
 }
 .card-standard h2{
-
+    color: var(--color-price);
+    font-size: 36px;
+    font-weight: 700;
+    display: inline;
+    margin: 0;
 }
 .card-standard span{
+    color: var(--gray);
+    font-size: 18px;
+    padding: 0 0 5px 5px;
+}
+.card-standard p{
+    padding-bottom: 20px;
+    margin: 10px 31px 0px;
+    border-bottom: 1px solid #EEE;
+    font-size: 14px;
+    color: var(--gray);
+}
 
+.card-standard ul{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray);
+    margin: 20px 31px 0px;
+    padding: 0;
+}
+.card-standard ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+.container-btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .card-standard button{
-
+    display: block;
+    width: 296px;
+    height: 49px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d539e;
+    margin: 0 30px 30px;
 }
