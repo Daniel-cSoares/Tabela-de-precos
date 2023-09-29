@@ -1,0 +1,16 @@
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --white: #fff;
+    --color-price: #1E2338;
+    --color-shadow: rgba(142, 150, 185, 0.25);
+  }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
