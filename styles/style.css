@@ -14,15 +14,21 @@ body{
     text-decoration: none;
     background: var(--page-background);
     font-family: 'Open Sans', sans-serif;
+    height: 100vh;
 }
 header{
     display: flex;
     justify-content: center;
+    background: var(--blue);
+    height: 450px;
+    color: var(--white);
+    width: 100%;
+}
+header section{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--blue);
-    height: 50vh;
-    color: var(--white);
+    margin-top: 100px;
 }
 header h1{
     margin: 0px;
@@ -38,8 +44,25 @@ header p{
     text-align: center;
 }
 main{
+    position: relative;
+    top: -155px;
+    height: 100vh;
+}
+.container-cards{
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: center;
+    gap: 30px;
+}
+#popular{
+    align-self: self-start;
+}
+#basico{
+    align-self: center;
+}
+#profissional{
+    align-self: center;
 }
 .card-standard{
     position: relative;
@@ -49,6 +72,10 @@ main{
     border-radius: 8px; 
     box-shadow: 0px 1px 2px 0px var(--color-shadow);
     overflow: hidden;
+    flex-shrink: 0;
+}
+.card-standard:hover .topo{
+    background: var(--yellow);
 }
 .titulo{
     font-size: 18px;
@@ -63,19 +90,19 @@ main{
 .preco{
     margin: 20px 29px 0px;
 }
-.card-standard h2{
+.card-standard-h2{
     color: var(--color-price);
     font-size: 36px;
     font-weight: 700;
     display: inline;
     margin: 0;
 }
-.card-standard span{
+.card-standard-span{
     color: var(--gray);
     font-size: 18px;
     padding: 0 0 5px 5px;
 }
-.card-standard p{
+.card-standard-p{
     padding-bottom: 20px;
     margin: 10px 31px 0px;
     border-bottom: 1px solid #EEE;
@@ -83,7 +110,7 @@ main{
     color: var(--gray);
 }
 
-.card-standard ul{
+.card-standard-ul{
     list-style: none;
     font-size: 14px;
     font-weight: 600;
@@ -91,7 +118,7 @@ main{
     margin: 20px 31px 0px;
     padding: 0;
 }
-.card-standard ul li{
+.card-standard-ul li{
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -102,7 +129,7 @@ main{
     bottom: 0;
     width: 100%;
 }
-.card-standard button{
+.card-standard-button{
     display: block;
     width: 296px;
     height: 49px;
@@ -119,7 +146,142 @@ main{
     cursor: pointer;
     transition: all 200ms ease-in-out;
 }
-.card-standard button:hover{
+.card-standard-button:hover{
     background: var(--blue);
     color: var(--white);
 }
+.card-standard-button.btn-basico{
+    height: 51px;
+}
+.card-popular{
+    position: relative;
+    width: 355px;
+    height: 490px;
+    background: var(--white);
+    border-radius: 8px; 
+    box-shadow: 0px 1px 2px 0px var(--color-shadow);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: var(--yellow);
+    
+}
+.titulo-popular{
+    font-weight: 600;
+    color: var(--blue);
+    margin: 25px 0px 24px 30px;
+}
+.card-popular h1{
+    margin: 0;
+    font-size: 20px;
+}
+.tag-popular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 16px;
+    background-color: var(--blue);
+    padding: 8px 24px;
+    border-radius: 40px;
+    font-size: 12px;
+    margin: 22px 20px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(194, 194, 194);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(175, 175, 175);
+  }
+
+  @media (max-width: 1150px){
+    .container-cards{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    #popular{
+        align-self: center;
+    }
+  }
+  @media (max-width: 766px){
+    #popular{
+        align-self: center;
+    }
+    .container-cards{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        background: var(--blue);
+        height: 500px;
+        color: var(--white);
+        width: 100%;
+    }
+  }
+  @media (max-width: 490px){
+    #popular{
+        align-self: center;
+    }
+    .container-cards{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        background: var(--blue);
+        height: 450px;
+        color: var(--white);
+        width: 100%;
+    }
+    header section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        
+    }
+    header h1{
+        font-size: 28px;
+    }
+    header p{
+        font-size: 18px;
+        width: 300px;
+    }
+  }

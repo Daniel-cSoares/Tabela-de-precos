@@ -11,24 +11,27 @@
     </head>
     <body>
         <header>
-            <h1>Conheça nossos planos</h1>
-            <p>
-                Conheça nossas soluções e escolha o plano ideal para o seu próximo projeto.
-            </p>
+            <section>
+                <h1>Conheça nossos planos</h1>
+                <p>
+                    Conheça nossas soluções e escolha o plano ideal para o seu próximo projeto.
+                </p>
+            </section>
         </header>
         <main>
-            <section class="card-standard">
-                <div class="titulo">
-                    <h1>Free</h1>
-                </div>
-                <div class="preco">
-                    <h2>R$ 0,00</h2>
-                    <span>/mês</span>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <ul>
+            <div class="container-cards">
+                <section id="basico" class="card-standard">
+                    <div class="titulo">
+                        <h1>Free</h1>
+                    </div>
+                    <div class="preco">
+                        <h2 class="card-standard-h2">R$ 0,00</h2>
+                        <span class="card-standard-span">/mês</span>
+                    </div>
+                    <p class="card-standard-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <ul class="card-standard-ul">
                         <li>
                             <img src="./assets/check.svg">
                             Lorem ipsum dolor sit amet
@@ -37,23 +40,28 @@
                             <img src="./assets/check.svg">
                             Lorem ipsum dolor sit amet
                         </li>
-                </ul>
-                <div class="container-btn">
-                    <button type="button">ASSINAR</button>
-                </div>
-            </section>
-            <section class="card-standard">
-                <div class="titulo">
-                    <h1>Profissional</h1>
-                </div>
-                <div class="preco">
-                    <h2>R$ 59,00</h2>
-                    <span>/mês</span>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <ul>
+                    </ul>
+                    <div class="container-btn">
+                        <button class="card-standard-button" type="button">ASSINAR</button>
+                    </div>
+                </section>
+                <section id="popular" class="card-popular">
+                    <div class="topo">
+                        <div class="titulo-popular">
+                            <h1>Básico</h1>
+                        </div>
+                        <span class="tag-popular">
+                            Popular
+                        </span>
+                    </div>
+                    <div class="preco">
+                        <h2 class="card-standard-h2">R$ 29,00</h2>
+                        <span class="card-standard-span">/mês</span>
+                    </div>
+                    <p class="card-standard-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <ul class="card-standard-ul">
                         <li>
                             <img src="./assets/check.svg">
                             Lorem ipsum dolor sit amet
@@ -62,11 +70,50 @@
                             <img src="./assets/check.svg">
                             Lorem ipsum dolor sit amet
                         </li>
-                </ul>
-                <div class="container-btn">
-                    <button type="button">ASSINAR</button>
-                </div>
-            </section>
+                        <li>
+                            <img src="./assets/check.svg">
+                            Lorem ipsum dolor sit amet
+                        </li>
+                    </ul>
+                    <div class="container-btn">
+                        <button class="card-standard-button btn-basico" type="button">ASSINAR</button>
+                    </div>
+                </section>
+                <section id="profissional" class="card-standard">
+                    <div class="titulo">
+                        <h1>Profissional</h1>
+                    </div>
+                    <div class="preco">
+                        <h2 class="card-standard-h2">R$ 59,00</h2>
+                        <span class="card-standard-span">/mês</span>
+                    </div>
+                    <p class="card-standard-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <ul class="card-standard-ul">
+                            <li>
+                                <img src="./assets/check.svg">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li>
+                                <img src="./assets/check.svg">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li>
+                                <img src="./assets/check.svg">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li>
+                                <img src="./assets/check.svg">
+                                Lorem ipsum dolor sit amet
+                            </li>
+                    </ul>
+                    <div class="container-btn">
+                        <button class="card-standard-button" type="button">ASSINAR</button>
+                    </div>
+                </section>
+            </div>
         </main>
+        
     </body>
 </html>
