@@ -37,6 +37,10 @@ header p{
     width: 500px;
     text-align: center;
 }
+main{
+    display: flex;
+    justify-content: center;
+}
 .card-standard{
     position: relative;
     width: 355px;
@@ -110,5 +114,12 @@ header p{
     font-size: 18px;
     font-weight: 600;
     color: #1d539e;
+    background: var(--white);
     margin: 0 30px 30px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.card-standard button:hover{
+    background: var(--blue);
+    color: var(--white);
 }
