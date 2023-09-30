@@ -255,6 +255,9 @@ main{
     #popular{
         align-self: center;
     }
+    #profissional{
+        margin-bottom: 20px;
+    }
     .container-cards{
         width: 100%;
         display: flex;
